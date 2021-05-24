@@ -1,0 +1,46 @@
+MERN Stack : 
+Mongodb : base de données qui enregistre les données sous le format Json, pas de typage
+Express : outil de développement côté serveur basé sur NodeJs
+NodeJs :  environnement d'excécution de code JavaScript en dehors du navigateur
+ReactJS : bibliothéque JavaScript qui permet de crèer des interfaces utilisateurs avec une architecture SPA Single Page Application, mais pas que.
+
+Promise : resolve / reject
+let p = new Promise ((resolve, reject) =W {
+    let a = 1 +1;
+    if (a === 2) {
+        resolve('Success');
+    } else {
+        reject('Failed');
+    }
+})
+p.then((message) =>{
+    console.log('This is in the then')
+}).catch((message) => {
+    console.log('This is in the catch')
+})
+
+Promises replaces callback ?
+
+React is based on components. We can create components both by classes or functions (hooks).
+Compnents render/return JSX JavaScript Syntax Extension
+
+-- functions
+export const Header = () => {
+    return (
+        <div>
+            <h1> My header</h1>
+        </div>    
+    )
+}
+
+
+--classes
+export default class Header extends React.Component {
+    render() { 
+        return (
+        <div>
+            <h1> My header</h1>
+        </div>    
+    )
+    }   
+}
